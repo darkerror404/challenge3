@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Challenge2</title>
+        <script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+if (form.id.value=="1337") {
+if (form.pass.value=="detected") {
+location="c3.html"
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+//-->
+</script>
+<style type="text/css">
+    *{
+        background-color: black;
+    }
+    h1{
+        color: red;
+    }
+    input{
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <center><h1>DARK ERROR</h1></center>
+    <center><img src="https://i.pinimg.com/originals/14/eb/c8/14ebc88651f61d67a40047ebd563501d.gif"></center>
+
+<center>
+<table bgcolor="white" cellpadding="12" border="1">
+<tr><td><h1><i><b>UserID</b></i></h1></td><td><form name="login"><input
+name="id" type="text"></td></tr>
+<tr><td><h1><i><b>Password</b></i></h1></td><td><input name="pass"
+type="password"></td></tr>
+<tr><td><center><input type="button" value="Login"
+onClick="pasuser(this.form)"></center></td><td><center><br><input
+type="Reset"></form></td></tr></table></center>
+
+</body>
+</html>
